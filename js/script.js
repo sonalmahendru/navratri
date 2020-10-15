@@ -4,8 +4,7 @@ var initial_images = [["images/mi10.gif","product-image-mi10"],["images/laptop.g
 var results = ["images/sandesh1.gif","images/sandesh2.gif","images/noluck.gif","images/noluck2.gif","images/sandesh1b.gif","images/durga.gif","images/sandesh2c.gif","images/sandesh2b.gif"];
 var game_flag = localStorage.getItem("flag");
 var result = localStorage.getItem("result");
-shuffle(results);
-shuffle(initial_images);
+
 //var status = setInterval(checkStatus,2000);
 
 var recorded_video_to_play = 0;
@@ -16,15 +15,6 @@ function main_clicked(){
 }
 
 function init_load(){
-    shuffle(results);
-shuffle(initial_images);
-    if(!game_flag){
-        download_brochure();
-    }
-        for(var i =1; i<=8;i++){
-            document.getElementById("prod"+i).src=initial_images[i-1][0];
-            document.getElementById("prod"+i).className=initial_images[i-1][1];
-        }
 }
 
 function result_text(){
@@ -53,6 +43,9 @@ function result_text(){
     document.getElementById("canvas").hidden = true;
 }
 
+function onInstructionClick(){
+    window.location.href="instructions.html"
+}
 
 function onProductClick(index, id){
     recorded_video_to_play = index;
@@ -100,15 +93,3 @@ function checkStatus(){
     } 
 }
 
-
-function shuffle(array) {
-    for (let i = array.length - 1; i > 0; i--) {
-      let j = Math.floor(Math.random() * (i + 1)); // random index from 0 to i
-  
-      // swap elements array[i] and array[j]
-      // we use "destructuring assignment" syntax to achieve that
-      // same can be written as:
-      // let t = array[i]; array[i] = array[j]; array[j] = t
-      [array[i], array[j]] = [array[j], array[i]];
-    }
-  }

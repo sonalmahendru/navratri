@@ -15,33 +15,28 @@
 
     <script src="js/script.js"></script>
     <link rel="stylesheet" href="css/style.css">
-    <title>Hide & Seek with Ganesha</title>
+    <title>Navratri Challenge</title>
 </head>
 <body onload="load_video()">
     <main class="challenge-background">
         <div class="content">
             <div id="video" class="recorded">
-                <video autoplay="true" id="recordedVideo" src="" >
-
-                </video>
+                <video id="recordedVideo" src="" controls autoplay></video>
             </div>
             <div id="container" class="recording">
-                <video autoplay="true" id="videoElement" style="border: solid;" >  
-                
-                </video>
-                <canvas id="canvas" width="600" height="480" style="border: solid;" hidden></canvas><!--width="640" height="480"-->
-                
+                <video id="videoElement" style="border: solid;"></video>
             </div>
             <div id="snap-div" class="snap-div">
-                <img id="snap" src="images/snap.png" class="snap" onclick="snap();"></img>
-                <img src="images/fbshare.png" id="sharefb" class="sharefb" onclick="shareToFacebook();"></img>
+                <img src="images/start_recording.png" onclick="controlRecording(0)" id="startRecording" class="rec-icon"></img>
+                <img src="images/stop_recording.png" onclick="controlRecording(1)" id="stopRecording" class="rec-icon"></img>
+                <img src="images/retake.png" id="retake" class="rec-icon" onClick="retake()" hidden></img>
+                <img src="images/submit.png" id="submit" class="rec-icon" onclick="onSubmitClicked()" hidden></img>
+                <img src="images/fbshare.png" id="sharefb" class="sharefb" onclick="shareToFacebook();" hidden></img>
             </div>
-            <a id="snapped_pic" href="" download></a>
-            <div id="share" class="share-socialmedia">
-                
-                <img src="images/retake.png" id="retake" class="retake" onClick="retake()"></img>
-            </div>
+            <a id="downloadVideo" href="" download></a>
         </div>
+		
     </main>
     <script src="js/camerascript.js"></script>
 </body>
+</html>

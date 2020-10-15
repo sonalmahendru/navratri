@@ -1,9 +1,4 @@
 @font-face{
-    font-family: enchanting;
-    src: url(../fonts/EnchantingCelebrations.ttf) format("truetype");
-}
-
-@font-face{
     font-family: proximanova;
     src: url(../fonts/proximanova/proximanova-reg-webfont.ttf) format("truetype");
 }
@@ -11,11 +6,6 @@
 @font-face{
     font-family: proximanovabold;
     src: url(../fonts/proximanova/proximanova-bold-webfont.ttf) format("truetype");
-}
-
-@font-face{
-    font-family: camphor;
-    src: url(../fonts/camphor/CamphorPro-Regular.OTF) format("opentype");
 }
 
 body{
@@ -84,7 +74,7 @@ main{
 
 .header{
     display: flex;
-    height: 20vh;
+    margin-top:9.5rem;
     justify-content: center;
     align-items: center;
 }
@@ -99,7 +89,7 @@ main{
 }
 
 .main-content {
-    margin-top: 15rem;
+    margin-top: 1rem;
 }
 
 .main {
@@ -132,11 +122,10 @@ main{
 .product-tile{
     flex:1;
     text-align: center;
-    padding:0.5rem;
 }
 
 .tile{
-    width: 70%;
+    width: 65%;
 }
 
 .main{
@@ -237,9 +226,11 @@ main{
 }
 
 .snap-div{
-    height:10vh;
-    display: flex;
     text-align: center;
+}
+
+.rec-icon{
+    width: 30%
 }
 
 .sharefb{
@@ -310,7 +301,7 @@ video {
     }
 
     .main-content {
-        margin-top: 15rem;
+        margin-top: 1rem;
     }
    
     .main {
@@ -350,7 +341,7 @@ h2{
 
 .header{
     display: flex;
-    height: 20vh;
+    height: 8rem;
     justify-content: center;
     align-items: center;
 }
@@ -360,7 +351,7 @@ h2{
 }
 
 .main-content {
-    margin-top: 13rem;
+    margin-top: 0.5rem;
 }
 
 .main {
@@ -395,7 +386,6 @@ h2{
 .product-tile{
     flex:1;
     text-align: center;	
-    padding: 5px;
 }
 
 .filter{
