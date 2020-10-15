@@ -288,8 +288,22 @@ main{
     width: 40%
 }
 
-video {
-  }
+.upload-form{
+    margin-top: 15rem;
+    text-align: center;
+}
+
+input[type=submit] {
+    background:url("../images/upload.png");
+    border:0;
+    display:block;
+    height:Change_TO_backgroundimageheight;
+    width: Change_To_backgroundimageWidth;
+}
+
+.image-upload>input{
+    display:none;
+}
 
 @media only screen and (min-width: 530px){
     main{
