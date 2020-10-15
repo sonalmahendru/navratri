@@ -70,14 +70,14 @@ if(isset($_POST['name']) && !empty($_POST['name']) && isset($_POST['email']) && 
               <img style="width:30%" src="images/browse.png"/>
             </label>
           
-            <input name="video" type="file" placeholder="Your Video" required/>
+            <input id="file-input" name="video" type="file" placeholder="Your Video" required/>
           </div>
         <div class="image-upload">
-            <label for="file-input">
+            <label for="video-upload">
               <img style="width:30%" src="images/upload.png"/>
             </label>
           
-            <input name="upload" type="submit" />
+            <input id="video-upload" name="upload" type="submit" />
           </div>
     </form>
 </div>
