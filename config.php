@@ -5,9 +5,9 @@ set_time_limit(0);
 
 /* define database credentials*/
 define('DBHOST','localhost');
-define('DBUSER','root');
-define('DBPASS','');
-define('DBNAME','sudhanshu');
+define('DBUSER','u258359028_navratriwithmi');
+define('DBPASS','NavratriMi8');
+define('DBNAME','u258359028_Navratriwithmi');
 
 /* Connection to Database*/
 $connection = mysqli_connect(DBHOST,DBUSER,DBPASS,DBNAME);

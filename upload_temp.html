@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Upload Video</title>
+</head>
+<body>
+    <main class="challenge-background">
+        <div class="upload-form">
+    <form method="post" enctype="multipart/form-data">
+        <div>Name: <input type="text" name="name" placeholder="Name" required><br><br></div>
+        <div>Email: <input type="email" name="email" placeholder="Your email" required><br><br></div>
+        <div>Phone: <input type="number" name="phone" placeholder="Your Phone Number"><br><br></div>
+        <div class="image-upload">
+            <label for="file-input">
+              <img style="width:30%" src="images/browse.png"/>
+            </label>
+          
+            <input name="video" type="file" placeholder="Your Video" required/>
+          </div>
+        <div class="image-upload">
+            <label for="file-input">
+              <img style="width:30%" src="images/upload.png"/>
+            </label>
+          
+            <input name="upload" type="submit" />
+          </div>
+    </form>
+</div>
+    </main>
+</body>
+</html>

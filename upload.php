@@ -52,18 +52,42 @@ if(isset($_POST['name']) && !empty($_POST['name']) && isset($_POST['email']) && 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Upload Video</title>
 </head>
-<body style="font-family:Calibri,Trebuchet,Arial,sans serif;">
+<body>
+    <main class="challenge-background">
+    <div class="upload-form">
     <?php
         if(!is_null($message)){
             print('<div style="padding:10px; font-size:14px;color:#721c24;background-color:#f8d7da;border-color:#f5c6cb; margin-bottom:10px; border-radius:5px;">'.$message.'</div>');
         }
     ?>
     <form method="post" enctype="multipart/form-data">
+        <div>Name: <input type="text" name="name" placeholder="Name" required><br><br></div>
+        <div>Email: <input type="email" name="email" placeholder="Your email" required><br><br></div>
+        <div>Phone: <input type="number" name="phone" placeholder="Your Phone Number"><br><br></div>
+        <div class="image-upload">
+            <label for="file-input">
+              <img style="width:30%" src="images/browse.png"/>
+            </label>
+          
+            <input name="video" type="file" placeholder="Your Video" required/>
+          </div>
+        <div class="image-upload">
+            <label for="file-input">
+              <img style="width:30%" src="images/upload.png"/>
+            </label>
+          
+            <input name="upload" type="submit" />
+          </div>
+    </form>
+</div>
+    
+   <!-- <form method="post" enctype="multipart/form-data">
         Name: <input type="text" name="name" placeholder="Name" required><br><br>
         Email: <input type="email" name="email" placeholder="Your email" required><br><br>
         Phone: <input type="number" name="phone" placeholder="Your Phone"><br><br>
         Video: <input type="file" name="video" placeholder="Your Video" required><br><br>
         <input type="submit" value="Upload Video" name="upload">
-    </form>
+    </form>-->
+    </main>
 </body>
 </html>
